@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
+//01
 class MainActivity : AppCompatActivity() {
     private var listHuman: MutableList<Human> = mutableListOf(
         Human("Oleg", "Olegov"),
