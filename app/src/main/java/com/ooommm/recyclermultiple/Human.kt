@@ -1,5 +1,5 @@
 package com.ooommm.recyclermultiple
 
-data class Human(val name: String, val lastName: String) {
+data class Human(val name: String, val lastName: String, var isSetColor: Boolean = false) {
 
 }
