@@ -45,4 +45,14 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onBackPressed() {
+        if (cv_delete.visibility == View.GONE) {
+            super.onBackPressed()
+        } else {
+            cv_delete.visibility = View.GONE
+            recyclerHumanAdapter.humanList = listHuman
+        }
+
+    }
 }

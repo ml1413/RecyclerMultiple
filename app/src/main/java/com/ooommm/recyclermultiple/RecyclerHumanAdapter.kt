@@ -58,12 +58,10 @@ class RecyclerHumanAdapter(private val context: Context, private val cvDelete: C
                     )
                     humanList[position].isSetColor = true
                     visibilityDelete++
-                    visibilityDelete()
                 } else {
                     holder.linearLayout.background = null
                     humanList[position].isSetColor = false
                     visibilityDelete--
-                    visibilityDelete()
                 }
             }
         }
@@ -72,11 +70,5 @@ class RecyclerHumanAdapter(private val context: Context, private val cvDelete: C
 
     override fun getItemCount() = humanList.size
 
-    private fun visibilityDelete() {
-        if (visibilityDelete > 0) {
-            cvDelete.visibility = View.VISIBLE
-        } else {
-            cvDelete.visibility = View.GONE
-        }
-    }
+
 }
